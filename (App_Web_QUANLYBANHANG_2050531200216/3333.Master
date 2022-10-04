@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="3333.Master.cs" Inherits="_App_Web_QUANLYBANHANG_2050531200216.MASTER_PAGE_USER" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            height: 52px;
+        }
+        .auto-style3 {
+            width: 1221px;
+            height: 353px;
+        }
+    </style>
+</head>
+<body>
+    <hq>Hello</hq><img alt="" class="auto-style3" src="IMAGES/bg.png" />
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p style="width: 673px; height: 109px">
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+
+    <table style="width:61%; height: 147px;">
+        <tr>
+            <td>
+                <asp:Repeater ID="Repeater1" runat="server">
+                </asp:Repeater>
+            </td>
+            <td>
+                <asp:Repeater ID="Repeater2" runat="server" OnItemCommand="Repeater2_ItemCommand">
+                </asp:Repeater>
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    </form>
+
+    </body>
+</html>
+
